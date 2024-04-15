@@ -28,14 +28,14 @@ const TaskCard = ({ Data }) => {
   };
   return (
     <div
-      className={`py-3 my-2 flex bg-${Data.color}-900 ${
+      className={`py-3 my-2 sm:flex bg-${Data.color}-900 ${
         isCompleted && "line-through opacity-70"
       } `}
     >
       <div className="w-[85%] flex ">
         <input type="checkbox" className="mx-2" onClick={handleCompleted} />
         {!toggleEdit ? (
-          <h1 className="">{Data.todo}</h1>
+          <h1 className="truncate">{Data.todo}</h1>
         ) : (
           <input
             type="text"
@@ -46,7 +46,7 @@ const TaskCard = ({ Data }) => {
         )}
       </div>
       {!isCompleted && (
-        <div className="space-x-4 cursor-pointer">
+        <div className="space-x-4 cursor-pointer px-2 py-1 sm:px-0 sm:py-0">
           {!toggleEdit ? (
             <>
               <FontAwesomeIcon

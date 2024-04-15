@@ -5,7 +5,7 @@ import TaskList from "./TaskList";
 const TodoContainer = () => {
   return (
     <div className="w-1/2 h-screen   mt-[5%]  text-white  rounded-lg  ">
-      <h1 className="mt-5 text-center text-3xl font-serif font-bold">
+      <h1 className="mt-5 text-center md:text-3xl 2xl font-serif font-bold">
         Get Things Done!
       </h1>
       <TaskInput />

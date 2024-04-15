@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTask } from "../utils/todoslice";
 const TaskInput = () => {
-  const task = useRef();
   const dispath = useDispatch();
   const [inputValue, setInputValue] = useState("");
 
@@ -36,7 +35,7 @@ const TaskInput = () => {
           }}
           type="text"
           placeholder="What do you want to do today?"
-          className="md:w-[65%] w-full py-2 px-2  border-blue-600 border-2 bg-transparent "
+          className="md:w-[65%] w-full py-2 px-2  border-blue-600 border-2 bg-transparent  "
         />
         <button
           type="submit"
